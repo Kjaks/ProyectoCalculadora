@@ -16,6 +16,9 @@ public class Calculadora {
             case "multiplicacion":
                 resultado = multiplicacion();
                 break;
+            case "division":
+                resultado = division();
+                break;
         }
         return resultado;
     }
@@ -26,5 +29,13 @@ public class Calculadora {
 
     public int multiplicacion() {
         return numero1 * numero2;
+    }
+
+    public int division() {
+        if (numero2 != 0) {
+            return numero1 / numero2;
+        } else {
+            throw new ArithmeticException("No se puede dividir por cero");
+        }
     }
 }
