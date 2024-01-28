@@ -13,12 +13,18 @@ public class Calculadora {
             case "suma":
                 resultado = suma();
                 break;
-            // Add more cases for other operations if needed
+            case "multiplicacion":
+                resultado = multiplicacion();
+                break;
         }
         return resultado;
     }
 
     public int suma() {
         return numero1 + numero2;
+    }
+
+    public int multiplicacion() {
+        return numero1 * numero2;
     }
 }
