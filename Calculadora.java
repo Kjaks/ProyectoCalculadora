@@ -13,6 +13,9 @@ public class Calculadora {
             case "suma":
                 resultado = suma();
                 break;
+            case "resta":
+                resultado = resta();
+                break;
             // Add more cases for other operations if needed
         }
         return resultado;
@@ -20,5 +23,9 @@ public class Calculadora {
 
     public int suma() {
         return numero1 + numero2;
+    }
+
+    public int resta() {
+        return numero1 - numero2;
     }
 }
