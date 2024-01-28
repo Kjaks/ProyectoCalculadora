@@ -13,12 +13,19 @@ public class Calculadora {
             case "suma":
                 resultado = suma();
                 break;
+<<<<<<< dividir
             case "multiplicacion":
                 resultado = multiplicacion();
                 break;
             case "division":
                 resultado = division();
                 break;
+=======
+            case "resta":
+                resultado = resta();
+                break;
+            // Add more cases for other operations if needed
+>>>>>>> main
         }
         return resultado;
     }
@@ -27,6 +34,7 @@ public class Calculadora {
         return numero1 + numero2;
     }
 
+<<<<<<< dividir
     public int multiplicacion() {
         return numero1 * numero2;
     }
@@ -37,5 +45,9 @@ public class Calculadora {
         } else {
             throw new ArithmeticException("No se puede dividir por cero");
         }
+=======
+    public int resta() {
+        return numero1 - numero2;
+>>>>>>> main
     }
 }
